@@ -1,0 +1,30 @@
+/* ul태그 밑의 li태그 모두 */
+ul li {
+  color: tomato;
+}
+
+/* ol태그 밑의 li태그 모두 */
+/* ol>li {
+  color: blue;
+} */
+
+/* #beverage>li {
+  color: brown;;
+} */
+
+/* #cola {
+  color: #000;
+} */
+
+.beverage {
+  color: blue;
+}
+
+#cola li{
+  color: black;
+}
+
+/* ol태그 밑의 li태그 밑의 ol태그 밑의 li태그 모두 */
+/* ol li ol li {
+  color: green;
+} */

@@ -1,0 +1,71 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 아래 방식이 거의 고정 */
+/* 픽셀, 선 방식, 색상 */
+section {
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  /* padding : 안의 내용물과의 거리 */
+  padding: 16px; 
+  /* margin : 경계부터 다른 개체들 사이와의 거리 */
+  margin-bottom: 30px;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: red;
+}
+
+a:hover {
+  color: yellow
+}
+
+.group-list li:first-child {
+  color: blue;
+}
+
+.group-list li:first-child::before {
+  content: "← first";
+  color: orange;
+  font-size: 11px;
+}
+
+.group-list li:last-child {
+  color: red;
+}
+
+.group-list li:last-child::before {
+  content: "← last";
+  color: orange;
+  font-size: 11px;
+}
+
+.group-list li:nth-child(2) {
+  background-color: lightgreen;
+  padding-left: 10px;
+  color: purple;
+}
+
+.group-list li:nth-child(2)::before {
+  content: "← 2nd";
+  color: orange;
+  font-size: 11px;
+}
+
+input {
+  border: 1px solid darkgray;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 14px;
+  outline: none;
+}
+
+input:focus {
+  border-color: steelblue;
+  box-shadow: 0 0 0 3px lightblue;
+}
