@@ -11,6 +11,7 @@ body {
   background-position: center;
   padding: 1px;
   text-align: center;
+  position: relative;
 }
 
 .main_title{
@@ -33,5 +34,19 @@ body {
   background-color: white;
   border: none;
   border-radius: 5px;
-  cursor: pointer; /* 버튼에 마우스 올리면 포인터 모양으로 바뀜*/
+  cursor: pointer; /* 버튼에 마우스 올리면 손 모양으로 바뀜*/
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 100px;
+}
+
+.explain-box {
+  width: 400px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #eee;
+  position: relative;
+  top: -40px;
 }
