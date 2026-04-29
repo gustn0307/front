@@ -2,6 +2,9 @@ body {
   margin: 0;
 }
 
+div {
+  box-sizing: border-box;
+}
 .main_background {
   width: 100%;
   height: 500px;
