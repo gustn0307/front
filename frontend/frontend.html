@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/frontend.css">
+  <script src="./js/frontend.js"></script>
+  <title>FrontEnd Application Form</title>
+</head>
+<body>
+  <div class="container">
+    <fieldset>
+      <h1>프런트엔드 개발자 지원서</h1>
+      <p>HTML, CSS, JavaScript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+      <hr>
+      <form onsubmit="check_frontEnd(event)">
+        <p>개인정보</p>
+        <ul>
+          <li>
+            <label for="">이름</label>
+            <input type="text" name="name" id="name" placeholder="공백없이 입력하세요.">
+          </li>
+          <li>
+            <label for="phone">연락처</label>
+            <input type="tel" name="phone" id="phone">
+          </li>
+        </ul>
+        <p>지원 분야</p>
+        <ul>
+          <li>
+            <input type="radio" name="part" id="publishing" value="publishing">
+            <label for="publishing">웹 퍼블리싱</label>
+          </li>
+          <li>
+            <input type="radio" name="part" id="appDev" value="appDev">
+            <label for="appDev">웹 애플리케이션 개발</label>
+          </li>
+          <li>
+            <input type="radio" name="part" id="EnvDev" value="EnvDev">
+            <label for="EnvDev">개발 환경 개선</label>
+          </li>
+        </ul>
+        <p>지원동기</p>
+        <textarea name="motivation" id="motivation" 
+        placeholder="본사 지원 동기를 간략히 써 주세요."
+        rows="5" cols="60"></textarea>
+        <div class="buttons">
+          <input type="submit" value="접수하기">
+          <input type="reset" value="다시 쓰기">
+        </div>
+      </form>
+    </fieldset>
+  </div>
+</body>
+</html>
