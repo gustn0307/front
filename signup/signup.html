@@ -4,13 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/signup.css">
-  <link rel="stylesheet" href="./js/signup.js">
+  <!-- JavaScript 파일은 아래와 같이 연결, 
+   defer 속성을 주면 현재 파일을 먼저 컴파일하고 
+   그 후에 스크립트 파일을 컴파일해 오류가 날 수 있는 상황을 예방할 수 있다.
+    -->
+  <script defer src="./js/signup.js"></script>
   <title>회원가입</title>
 </head>
 <body>
   <div class="container">
     <h1>회원가입을 환영합니다.</h1>
-    <form method="get">
+    <form onsubmit="check_sign(event)" method="get">
       <fieldset>
         <legend>사용자 정보</legend>
         <ul>
