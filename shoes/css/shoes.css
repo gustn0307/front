@@ -44,6 +44,10 @@ div {
   bottom: 100px;
 }
 
+.main_button:hover {
+  color: red;
+}
+
 .explain-box {
   width: 400px;
   margin: auto;
@@ -53,3 +57,49 @@ div {
   position: relative;
   top: -40px;
 }
+
+.pseudo::first-letter {
+  color:red;
+  font-size: 30px;
+}
+
+.pseudo::first-line {
+  color: blue;
+}
+
+div, input, textarea {
+  box-sizing: border-box;
+}
+
+.form-background {
+  background-color: black;
+  padding: 30px;
+}
+
+.form-white {
+  background-color: white;
+  padding: 30px;
+  width: 80%;
+  margin: auto;
+  max-width: 600px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.w-100 {
+  width: 100%;
+  padding: 10px;
+}
+
+.w-50 {
+  width: 50%;
+  padding: 10px;
+  float: left;
+}
+
