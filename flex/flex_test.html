@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Test</title>
+  <style>
+    .container {
+      background-color: powderblue;
+      height: 200px;
+
+      /* 
+      flex-direction으로 주축과 교차축이 바뀜
+      row면 주축이 가로, 교차축이 세로
+      column이면 주축이 세로, 교차축이 가로
+      align-items: 교차축의 중심으로 정렬
+      justify-content: 주축의 중심으로 정렬 
+      부모에게 적용해야 자식에게 영향을 준다.
+      */
+      display: flex; /* 가로 정렬이 디폴트 */
+      flex-direction: row; /* 세로 정렬로 변경 */
+      align-items: center; 
+      justify-content: center;
+      
+    }
+    /* 특정 자식만 크기 배율을 지정 */
+    /* flex-grow : 크기 배율을 지정*/
+    /* .item:nth-child(2), .item:nth-child(4) {
+      flex-grow: 2; 
+    } */
+
+    .item{
+      width: 50px;
+      height: 50px;
+      background-color: tomato;
+      border: 1px solid white;
+      /*
+      text-align: 가로 정렬
+      align-content: 세로 정렬
+      */
+      text-align: center;  
+      align-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- flex-basis는 브라우저가 작아지면 본인의 크기도 작아짐 -->
+    <!-- flex-shrink는 브라우저가 작아지면 값이 0이면 크기가 작아지지 않고, 값이 1이면 크기가 작아짐-->
+    <!-- <div class="item" style="flex-basis: 600px; flex-shrink: 0; ">1</div> -->
+     <div class="item" style="flex-grow: 2;">1</div>
+    <div class="item" style="flex-grow: 0;">2</div>
+    <div class="item" style="flex-grow: 2;">3</div>
+
+  </div>
+</body>
+</html>

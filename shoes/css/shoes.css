@@ -103,3 +103,74 @@ div, input, textarea {
   float: left;
 }
 
+.nav-container {
+  display: flex;
+  height: 50px;
+  padding: 10px;
+  justify-content: center;
+  background-color: black;
+}
+
+.nav-item {
+  margin-right: 10px;
+  color: white;
+}
+
+.product-container {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-container div {
+  /* float: left; */
+  width: 25%;
+  text-align: center;
+}
+
+
+/* 미디어 쿼리 : 보통 css의 마지막에 기록 */
+
+/* 현재 브라우저의 폭이 1200px 이하가 될 경우 */
+@media screen and (max-width: 1200px){
+  .main_title {
+    font-size: 30px;
+  }
+
+  .product-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .product-container div {
+    flex: 1 1 50%; /* 2개씩 한 줄 */
+  }
+}
+/* 현재 브라우저의 폭이 768px 이하가 될 경우 */
+@media screen and (max-width: 768px){
+  .main_title {
+    font-size: 20px;
+  }
+
+  .product-container div {
+    /* 
+    flex: 1 1 100%; 1개씩 한 줄
+    첫 번째 인자: flex-basis(기본크기)
+    두 번째 인자: shrink(줄어들것인가?)
+    세 번째 인자: flex-grow(늘어나기, 크기 배율)
+    */
+    flex: 1 1 100%; 
+  }
+}
+
+/* 현재 브라우저의 폭이 576px 이하가 될 경우 */
+@media screen and (max-width: 576px){
+  .main_title {
+    font-size: 10px;
+  }
+}
+

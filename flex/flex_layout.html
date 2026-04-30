@@ -1,0 +1,95 @@
+<!-- html>head+body : HTML 형식에서 head와 body를 형제로 생성 -->
+<!-- html>head^body : HTML 형식에서 head의 자식으로 body를 생성-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holy Grail Layout</title>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 800px;
+    }
+
+    header {
+      border-bottom: 1px solid gray;
+    }
+
+    .content {
+      display: flex;
+    }
+
+    nav {
+      border-right: 1px solid gray;
+    }
+
+    aside {
+      border-left: 1px solid gray;
+    }
+
+    main {
+      text-align: justify;
+      padding: 10px;
+      column-count: 4;
+      column-width: 100px;
+      column-gap: 20px;
+      column-rule-color:red ;
+      column-rule-style: solid;
+      column-rule-width: 1px;
+    }
+
+    nav, aside {
+      /* 너비 고정 */
+      flex-basis: 150px;
+      /*  다른 요소 크기 희생 */
+      flex-shrink: 0;
+    }
+
+    footer {
+      border-top: 1px solid gray;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Holy Grail Layout</h1>
+    </header>
+    <section class="content">
+      <nav>
+        <ul>
+          <li>main</li>
+          <li>about</li>
+          <li>help</li>
+        </ul>
+      </nav>
+      <main>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam consectetur eos earum similique enim saepe accusamus quos ex, ratione, veniam officiis doloribus totam ipsa. Provident eius quaerat aperiam ratione praesentium.
+          Cupiditate, consectetur. Ab illo, quaerat esse aut magnam architecto reiciendis quasi incidunt, recusandae asperiores, a quia! Laboriosam dolores praesentium beatae et, fugit molestiae autem maxime cupiditate laudantium libero recusandae ratione?
+          Voluptas culpa porro incidunt totam ullam sapiente est modi eveniet cupiditate. Mollitia deserunt in eius quo a voluptates tenetur porro sequi nesciunt atque totam commodi quae, ex reiciendis earum veritatis.
+          Ea dicta consequuntur quibusdam aliquid dignissimos? Inventore impedit exercitationem porro doloribus eius nisi harum, cupiditate fugiat ullam enim distinctio similique, molestias quia maxime! Neque error quis ab corrupti debitis nemo.
+          Ab repellendus temporibus fugit blanditiis iure aut? Architecto in mollitia sit dolore laudantium sequi incidunt fugiat! Voluptas eaque sed, alias officiis reiciendis deserunt commodi molestias ipsum velit tempore, quis aperiam.
+          Nostrum vel quisquam aspernatur ducimus distinctio voluptatum consequatur dicta, cupiditate veritatis iure officia excepturi voluptatem, nihil corrupti quibusdam, delectus deserunt! Numquam sit obcaecati vero, illo doloribus quam impedit temporibus id!
+          Aperiam hic blanditiis neque, iste fugit asperiores alias recusandae ipsam quaerat officiis consectetur! Labore, reprehenderit esse laudantium fugiat hic necessitatibus aperiam, earum vitae ab officia omnis facere incidunt harum qui.
+          Quam doloribus nisi officiis delectus, aliquam ullam optio. Recusandae est hic, obcaecati similique quisquam tenetur necessitatibus sunt rerum veniam nisi voluptatum consectetur a perspiciatis. Labore nam quae assumenda eius esse.
+          Modi dolore debitis ea, hic, placeat eius, sint ut optio officia minus non nobis exercitationem et. Debitis deleniti reprehenderit alias, odio voluptas maiores quibusdam rerum, voluptatibus ducimus nemo ad iste?
+          Numquam facere non voluptas natus ad in tempore error repellat, nemo, eius voluptatem a? Sapiente, qui, commodi veniam quas, reiciendis ad aperiam minima saepe ex magnam fuga vel dignissimos rem.
+        </p>
+      </main>
+      <aside>
+        AD (광고 영역)
+      </aside>
+    </section>
+    <footer>
+      <a href="www.naver.com">홈페이지</a>
+    </footer>
+  </div>
+</body>
+</html>
