@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation Test</title>
+  <style>
+    .container {
+      height: 100px;
+      border: 4px solid black;
+    }
+
+    .container .item {
+      width: 100px;
+      height: 100px;
+      background-color: royalblue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      transition: 1s;
+      opacity: 0;
+    }
+
+    .container .item:hover {
+      background-color: #FF7920;
+      transform: rotate(45deg);
+      border-radius: 50%;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">
+      animation
+    </div>
+  </div>
+</body>
+</html>

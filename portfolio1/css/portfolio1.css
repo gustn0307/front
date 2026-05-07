@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+}
+.container {
+  background: linear-gradient(to bottom, skyblue, blue);
+  width: 100%;
+  height: 100%;
+}
+
+.top {
+  display: flex;
+}
+
+.landing {
+  width: 40%;
+  margin: 10px 50px;
+}
+
+.landing h2 {
+  color: white;
+}
+
+.landing p{
+  color: white;
+  font-size: 12px;
+}
+
+.landing button {
+  background-color: rgb(53, 53, 53);
+  color: white;
+  width: 100px;
+  height: 30px;
+}
+
+.top img{
+  width: 20%;
+  /* margin 순서: 위 오른쪽 아래 왼쪽  */
+  margin-top: 100px;
+  margin-left: 300px;
+}
+
+.center {
+  background-color: white;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+
+.center button {
+  background-color: rgb(53, 53, 53);
+  color: white;
+  width: 150px;
+  height: 30px;
+}
+
+.offer {
+  text-align: center;
+  color: white;
+}
+
+.product_container {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.product_container .service {
+  /* float: left; */
+  flex: 1, 1, 25%;
+  /* width: 25%; */
+  padding: 10px;
+  text-align: center;
+}
+
+.product_container i {
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  padding-top: 25px;
+  box-sizing: border-box;
+  color: rgb(67, 49, 231);
+  margin: 20px auto 10px auto;
+} 
+
+.bottom {
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  height: 600px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap; 
+  width: 80%;
+  height: 40%;
+  margin: 10px auto;
+}
+
+.product_item {
+  width: 50%;
+  height: 100%;
+}
+
+.product_item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  margin: auto;
+}
+
+.social {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.social i{
+  background-color: royalblue;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  padding-top: 25px;
+  box-sizing: border-box;
+  color: white;
+  margin: 20px auto 10px auto;
+}
+
+
+
+
